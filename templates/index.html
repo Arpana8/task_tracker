@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>My Task Tracker</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- ========================================
+         MAIN CONTAINER
+    ========================================= -->
+
+    <main class="container">
+
+
+        <!-- ========================================
+             PAGE HEADER
+        ========================================= -->
+
+        <h1>My Task Tracker</h1>
+
+        <p>
+            Welcome to my first real web application!
+        </p>
+
+
+        <!-- ========================================
+             ADD TASK
+        ========================================= -->
+
+  <!-- ========================================
+     ADD TASK
+========================================= -->
+
+<div class="add-task">
+
+    <input
+        id="task-input"
+        type="text"
+        placeholder="Enter a task..."
+    >
+
+    <button id="add-button">
+        Add Task
+    </button>
+
+</div>
+
+
+        <!-- ========================================
+             API TEST
+        ========================================= -->
+
+        <button id="api-button">
+            Call API
+        </button>
+
+        <p id="api-result"></p>
+
+
+        <!-- ========================================
+             STATUS MESSAGE
+        ========================================= -->
+
+        <p id="status-message"></p>
+
+
+        <!-- ========================================
+             FILTER BUTTONS
+        ========================================= -->
+
+        <div class="filters">
+
+            <button id="all-button">
+                All
+            </button>
+
+            <button id="active-button">
+                Active
+            </button>
+
+            <button id="completed-button">
+                Completed
+            </button>
+
+        </div>
+
+
+        <!-- ========================================
+             TASK COUNTER
+        ========================================= -->
+
+        <p id="task-counter"></p>
+
+
+        <!-- ========================================
+             TASK LIST
+        ========================================= -->
+
+        <ul id="task-list"></ul>
+
+
+    </main>
+
+
+    <!-- ========================================
+         JAVASCRIPT
+    ========================================= -->
+
+    <script
+        src="{{ url_for('static', filename='app.js') }}"
+    ></script>
+
+
+</body>
+
+</html>

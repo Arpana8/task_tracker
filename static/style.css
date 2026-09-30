@@ -1,0 +1,334 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   PAGE
+======================================== */
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f4f4;
+
+    margin: 0;
+
+}
+
+
+/* ========================================
+   MAIN CONTAINER
+======================================== */
+
+.container {
+
+    width: 600px;
+
+    max-width: calc(100% - 60px);
+
+    margin: 60px auto;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+}
+
+
+/* ========================================
+   HEADING
+======================================== */
+
+h1 {
+
+    text-align: center;
+
+    margin-top: 0;
+
+}
+
+
+/* ========================================
+   PARAGRAPHS
+======================================== */
+
+p {
+
+    text-align: center;
+
+    color: #666;
+
+}
+
+
+/* ========================================
+   ADD TASK AREA
+======================================== */
+
+.add-task {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+}
+
+
+/* ========================================
+   TASK INPUT
+======================================== */
+
+#task-input {
+
+    flex: 1;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+}
+
+
+/* ========================================
+   ADD BUTTON
+======================================== */
+
+#add-button {
+
+    padding: 12px 18px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+}
+
+
+/* ========================================
+   ADD BUTTON HOVER
+======================================== */
+
+#add-button:hover {
+
+    opacity: 0.85;
+
+}
+
+
+/* ========================================
+   TASK LIST
+======================================== */
+
+#task-list {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin-top: 25px;
+
+}
+
+
+/* ========================================
+   EACH TASK
+======================================== */
+
+#task-list li {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 14px;
+
+    margin-bottom: 10px;
+
+    background-color: #f8f8f8;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 8px;
+
+}
+
+
+/* ========================================
+   TASK TEXT
+======================================== */
+
+#task-list li span {
+
+    flex: 1;
+
+}
+
+
+/* ========================================
+   TASK BUTTONS
+======================================== */
+
+#task-list li button {
+
+    padding: 6px 10px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+}
+
+
+/* ========================================
+   TASK BUTTON HOVER
+======================================== */
+
+#task-list li button:hover {
+
+    opacity: 0.8;
+
+}
+
+
+/* ========================================
+   FILTERS
+======================================== */
+
+.filters {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.filters button {
+
+    padding: 8px 15px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+}
+
+
+.filters button:hover {
+
+    opacity: 0.8;
+
+}
+
+
+/* ========================================
+   TASK COUNTER
+======================================== */
+
+#task-counter {
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 600px) {
+
+    /* Main container */
+
+    .container {
+
+        width: auto;
+
+        max-width: none;
+
+        margin: 20px 12px;
+
+        padding: 20px;
+
+    }
+
+
+    /* Stack input and button */
+
+    .add-task {
+
+        flex-direction: column;
+
+    }
+
+
+    /* Full-width input */
+
+    #task-input {
+
+        width: 100%;
+
+    }
+
+
+    /* Full-width add button */
+
+    #add-button {
+
+        width: 100%;
+
+    }
+
+
+    /* Allow filters to wrap */
+
+    .filters {
+
+        flex-wrap: wrap;
+
+    }
+
+
+    /* Allow task contents to wrap */
+
+    #task-list li {
+
+        flex-wrap: wrap;
+
+    }
+
+}
